@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <div>
+        <h1>Bienvenido a tus cuentas de banco.</h1>
+    </div>
+    <div>
+        <label for="">Cuenta Saldo: </label>
+        <input type="text" name="quantOne" id="quOne" value="300">
+        <form action="">
+            <h2>Transferencias</h2>
+            <input type="text" name="" id="move" placeholder="Cantidad">
+            <input type="button" value="Ingresar cantidad" id="depo" onclick="deposit()">
+            <input type="button" value="Retirar cantidad" id="wDraw" onclick="withdrawal()">
+
+        </form>
+        </div>
+        <div id="printing">     
+            <h1 id="ad"></h1>
+            <h3 id="beforeMove"></h3>
+            <p id="quantBalance"></p>    
+            <h3 id="afterMove"></h3>
+            <p id="quantFinal"></p>
+            <p id="aboutMove"></p>
+        </div>
+    <script src="innerFunction.js"></script>
+    <!-- <script>
+        function deposit(){
+            let moveQ = parseInt(document.getElementById('move').value);
+            let balanceQ = parseInt(document.getElementById('quOne').value);
+            let beforeChange = balanceQ;
+            let change = moveQ;            
+            document.getElementById('quOne').value = (balanceQ + moveQ);
+            
+            window.open('emergentWindow.html', 'Deposit', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=300,height=200,left = 390,top = 50');
+            document.getElementById('quantBalance').innerHTML=balanceQ;
+        }
+        function withdrawal(){
+            let moveQ = parseInt(document.getElementById('move').value);
+            let balanceQ = parseInt(document.getElementById('quOne').value);
+            document.getElementById('quOne').value = (balanceQ - moveQ);
+        }
+    </script> -->
+    
+</body>
+</html>
